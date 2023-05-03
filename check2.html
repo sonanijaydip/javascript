@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+
+  <!-- ======================================  css  ============================================= -->
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: lightgray;
+      ;
+
+    }
+
+    .card-body {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    header {
+      text-align: center;
+      color: green;
+      padding: 30px 0;
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+
+    .main {
+      display: flex;
+      gap: 10%;
+    }
+
+    .btn {
+      height: 30px;
+      width: 30px;
+    }
+
+    .container {
+      width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    #b1{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: lightblue;
+      width: 25%;
+      height: 25px;
+      font-size: 20px;
+      margin-left: 35%;
+      text-align: center;
+
+    }
+/*        #b2{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: lightblue;
+      width: 25%;
+      height: 25px;
+      font-size: 20px;
+      margin-left: 35%;
+      text-align: left;
+
+    }*/
+  </style>
+
+  <!-- ========================================== css end ============================== -->
+
+  <!-- ======================================header==================================== -->
+
+  <header>
+    <h1>ALL FOOD ARE HERE</h1>
+  </header>
+  <!-- ========================= header end================================================ -->
+
+  <!--============================================ main menu =================================-->
+  <div class="main container">
+    <section>
+      <div class="card" style="width: 18rem;">
+        <img src="img/1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Pizza</h1>
+          <h3 class="card-text"> Rs. 199/- Only</h3>
+          <input type="checkbox" name="" onchange="check('199','c1')" id="c1" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Salled</h1>
+          <h3 class="card-text">Rs. 50/- Only</h3>
+          <input type="checkbox" name="" onchange="check('50','c2')" id="c2" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/15.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Dhosa</h1>
+          <h3 class="card-text"> Rs. 249/- Only</h3>
+          <input type="checkbox" name="" onchange="check('249','c3')" id="c3" class="btn">
+        </div>
+      </div>
+
+ 
+    </section>
+    <section>
+      <div class="card" style="width: 18rem;">
+        <img src="img/4.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Samosa</h1>
+          <h3 class="card-text">Rs. 129/- Only</h3>
+          <input type="checkbox" name="" onchange="check('129','c4')" id="c4" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/5.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Nan</h1>
+          <h3 class="card-text">Rs. 15/- Only</h3>
+          <input type="checkbox" name="" onchange="check('15','c5')" id="c5" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/6.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Chicken</h1>
+          <h3 class="card-text">Rs. 459/- Only</h3>
+          <input type="checkbox" name="" onchange="check('459','c6')" id="c6" class="btn">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="card" style="width: 18rem;">
+        <img src="img/17.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Dal-fry-jeera-rice</h1>
+          <h3 class="card-text">Rs. 159/- Only</h3>
+          <input type="checkbox" name="" onchange="check('159','c7')" id="c7" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/8.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Biryani</h1>
+          <h3 class="card-text"> Rs. 299/- Only</h3>
+          <input type="checkbox" name="" onchange="check('299','c8')" id="c8" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/9.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Manchuriyan</h1>
+          <h3 class="card-text"> Rs. 249/- Only</h3>
+          <input type="checkbox" name="" onchange="check('249','c9')" id="c9" class="btn">
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </div>
+  <!-- ====================================main menu end ================================== -->
+
+  <footer>
+    <input type="box" value="" name="" id="b1" class="btn1">
+    <input type="box" value="" name="" id="b2" class="btn2">
+  </footer>
+<script type="text/javascript">
+
+  // function check(n) 
+  // {
+  //    var total=0
+  //     for (var i = 1; i < 4; i++) 
+  //     {
+  //         var x[i] = document.getElementById('radhe'+i).value;
+  //         var z[i] = document.getElementById('radhe'+i);
+  //          alert('');
+  //         var a[i] = parseInt(x[i])
+  //         if ((z[i].checked) == true) 
+  //         {
+  //           total = total + x[i];
+
+  //         }
+  //         else{
+  //           total = total - x[i];
+  //         }
+         
+  //     }                                                                 
+  //     document.getElementById('b1').value = total;
+  // }
+    cnt=0
+  function check(n,id) 
+  {
+      
+      var a = document.getElementById(id);
+      var m = parseInt(n)
+      if (a.checked == true)
+      {
+          cnt+=m;
+
+      }
+      else
+      {
+        cnt-=m;
+      }
+
+      document.getElementById('b1').value = cnt;
+      document.getElementById('b2').value = gst;
+
+  }                                                                                                        
+
+</script>
+
+
+
+</body>
+
+</html>

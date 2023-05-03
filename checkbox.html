@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+
+  <!-- ======================================  css  ============================================= -->
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: lightgray;
+      ;
+
+    }
+
+    .card-body {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    header {
+      text-align: center;
+      color: green;
+      padding: 30px 0;
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+
+    .main {
+      display: flex;
+      gap: 10%;
+    }
+
+    .btn {
+      height: 30px;
+      width: 30px;
+    }
+
+    .container {
+      width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    #b1{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: lightblue;
+      width: 25%;
+      height: 25px;
+      font-size: 20px;
+      margin-left: 35%;
+      text-align: center;
+
+
+
+    }
+  </style>
+
+  <!-- ========================================== css end ============================== -->
+
+  <!-- ======================================header==================================== -->
+
+  <header>
+    <h1>ALL FOOD ARE HERE</h1>
+  </header>
+  <!-- ========================= header end================================================ -->
+
+  <!--============================================ main menu =================================-->
+  <div class="main container">
+    <section>
+      <div class="card" style="width: 18rem;">
+        <img src="img/1.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Pizza</h1>
+          <h3 class="card-text"> Rs. 199/- Only</h3>
+          <input type="checkbox" name="" onchange="check()" value="199" id="radhe" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Salled</h1>
+          <h3 class="card-text">Rs. 50/- Only</h3>
+          <input type="checkbox" name="" onchange="check2()" value="50" id="radhe2" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/15.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Dhosa</h1>
+          <h3 class="card-text"> Rs. 249/- Only</h3>
+          <input type="checkbox" name="" onchange="check3()" value="249" id="radhe3" class="btn">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="card" style="width: 18rem;">
+        <img src="img/4.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Samosa</h1>
+          <h3 class="card-text">Rs. 129/- Only</h3>
+          <input type="checkbox" name="" onchange="check4()" value="129" id="radhe4" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/5.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Nan</h1>
+          <h3 class="card-text">Rs. 15/- Only</h3>
+          <input type="checkbox" name="" onchange="check5()" value="15" id="radhe5" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/6.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Chicken</h1>
+          <h3 class="card-text">Rs. 459/- Only</h3>
+          <input type="checkbox" name="" onchange="check6()" value="459" id="radhe6" class="btn">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="card" style="width: 18rem;">
+        <img src="img/17.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Dal-fry-jeera-rice</h1>
+          <h3 class="card-text">Rs. 159/- Only</h3>
+          <input type="checkbox" name="" onchange="check7()" value="159" id="radhe7" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/8.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Biryani</h1>
+          <h3 class="card-text"> Rs. 299/- Only</h3>
+          <input type="checkbox" name="" onchange="check8()" value="299" id="radhe8" class="btn">
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/9.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Manchuriyan</h1>
+          <h3 class="card-text"> Rs. 249/- Only</h3>
+          <input type="checkbox" name="" onchange="check9()" value="249" id="radhe9" class="btn">
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+  <!-- ====================================main menu end ================================== -->
+
+  <footer>
+    <input type="box" value="" name="" id="b1" class="btn1">
+  </footer>
+<script type="text/javascript">
+
+	// var total =0;
+	// function check()
+	// {
+	// 	var x = document.getElementById('radhe').value
+	// 	var z = document.getElementById('radhe')
+	// 	var a = parseInt(x)
+	// 	// console.log(x)
+	// 	if (z.checked == true) 
+	// 	{
+	// 		total = total + a;
+	// 	}
+	// 	else{
+	// 		total = total - a;
+	// 	}	
+	// 	console.log()
+	// 	document.getElementById('b1').value = total;
+
+	// }
+	// function check2()
+	// {
+	// 	var x = document.getElementById('radhe2').value
+	// 	var z = document.getElementById('radhe2')
+	// 	var a = parseInt(x)
+	// 	// console.log(x)
+	// 	if (z.checked == true) 
+	// 	{
+	// 		total = total + a;
+	// 	}
+	// 	else{
+	// 		total = total - a;
+	// 	}	
+	// 	console.log()
+	// 	document.getElementById('b1').value = total;
+	// }
+
+  //   function check3()
+  // {
+  //   var x = document.getElementById('radhe3').value
+  //   var z = document.getElementById('radhe3')
+  //   var a = parseInt(x)
+  //   // console.log(x)
+  //   if (z.checked == true) 
+  //   {
+  //     total = total + a;
+  //   }
+  //   else{
+  //     total = total - a;
+  //   } 
+  //   console.log()
+  //   document.getElementById('b1').value = total;
+  // }
+  //   function check4()
+  // {
+  //   var x = document.getElementById('radhe4').value
+  //   var z = document.getElementById('radhe4')
+  //   var a = parseInt(x)
+  //   // console.log(x)
+  //   if (z.checked == true) 
+  //   {
+  //     total = total + a;
+  //   }
+  //   else{
+  //     total = total - a;
+  //   } 
+  //   console.log()
+  //   document.getElementById('b1').value = total;
+  // }
+  //   function check5()
+  // {
+  //   var x = document.getElementById('radhe5').value
+  //   var z = document.getElementById('radhe5')
+  //   var a = parseInt(x)
+  //   // console.log(x)
+  //   if (z.checked == true) 
+  //   {
+  //     total = total + a;
+  //   }
+  //   else{
+  //     total = total - a;
+  //   } 
+  //   console.log()
+  //   document.getElementById('b1').value = total;
+  // }
+  //   function check6()
+  // {
+  //   var x = document.getElementById('radhe6').value
+  //   var z = document.getElementById('radhe6')
+  //   var a = parseInt(x)
+  //   // console.log(x)
+  //   if (z.checked == true) 
+  //   {
+  //     total = total + a;
+  //   }
+  //   else{
+  //     total = total - a;
+  //   } 
+  //   console.log()
+  //   document.getElementById('b1').value = total;
+  // }
+  //   function check7()
+  // {
+  //   var x = document.getElementById('radhe7').value
+  //   var z = document.getElementById('radhe7')
+  //   var a = parseInt(x)
+  //   // console.log(x)
+  //   if (z.checked == true) 
+  //   {
+  //     total = total + a;
+  //   }
+  //   else{
+  //     total = total - a;
+  //   } 
+  //   console.log()
+  //   document.getElementById('b1').value = total;
+  // }
+  //   function check8()
+  // {
+  //   var x = document.getElementById('radhe8').value
+  //   var z = document.getElementById('radhe8')
+  //   var a = parseInt(x)
+  //   // console.log(x)
+  //   if (z.checked == true) 
+  //   {
+  //     total = total + a;
+  //   }
+  //   else{
+  //     total = total - a;
+  //   } 
+  //   console.log()
+  //   document.getElementById('b1').value = total;
+  // }
+  //   function check9()
+  // {
+  //   var x = document.getElementById('radhe9').value
+  //   var z = document.getElementById('radhe9')
+  //   var a = parseInt(x)
+  //   // console.log(x)
+    // if (z.checked == true) 
+  //   {
+  //     total = total + a;
+  //   }
+  //   else{
+  //     total = total - a;
+  //   } 
+  //   console.log()
+  //   document.getElementById('b1').value = total;
+  // }
+
+
+  function check(n) 
+  {
+      cnt=0
+     for (var i = 0; i < x.length; i++) 
+      {
+          if (x[i].checked == true) 
+          {
+
+            y = x[i].value
+            cnt = parseInt(cnt) + parseInt(y)
+          }
+        
+      }                                                                                                             
+      document.getElementById('b1').value = cnt
+  }
+  
+
+</script>
+
+
+
+</body>
+
+</html>
